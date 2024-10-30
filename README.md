@@ -63,18 +63,26 @@ correo de manera global con el siguiente comando:
 
 Cambia las `<>` por tu correo electronico de trabajo. 
 
+4. **Verificación**: Una vez terminado este proceso, verifica que tus datos se 
+encuentran de la manera correcta, en caso que no, vuelve a escribir los comandos
+y cambia la información por la correcta. Comando para verificar:
 
-# ¿Cómo comenzar a usar Git?
+`git config --list`
 
-Para poder comenzar a usar a git en un proyecto, es importante primero configurar
+**NOTA**: si tienes alguna duda sobre un comando, puedes buscar la documentación 
+oficial de git, o también, usar este comando que te da una pequeña explicación 
+de los comandos:
 
-Para poder comenzar a usar git en un proyecto, puedes clonar lo desde Git Hub
-o en la carpeta donde se encuentra el proyecto usar el comando:
+`git --help`
+
+# ¿Cómo comenzar a usar Git en tu proyecto?
+
+Una vez configurado tu git, puedes ir crear un repositorio y luego iniciar el 
+comando:
 
 `git init`
 
-Con ese comando se inicia git y así poder empezar con el control de versiones.    
+Con ese comando se inicia git y así poder empezar con el control de versiones.
 
-Comando para saber sobre otros comandos:
+---
 
-`git --help`
