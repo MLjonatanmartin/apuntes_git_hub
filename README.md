@@ -3,7 +3,11 @@ Mis apuntes en clases de Git y Hub
 
 ---
 
-# ¿Para que sirve Git?
+# CLASE #2
+
+---
+
+## ¿Para que sirve Git?
 
 Git es un controlador de versiones para poder trabajar en los proyectos, sirve
 también para poder trabajar en equipo. Antes habían muchos problemas para 
@@ -12,7 +16,7 @@ cuando surgió git, fue implementado de inmediatamente.
 
 ---
 
-# Conceptos Generales de Git
+## Conceptos Generales de Git
 
 1. **Repositorios**: Git se maneja con repositorios, los cuales son la carpeta donde
 se aloja el proyecto. Cada desarrollador cuenta con una copia en su maquina local
@@ -32,7 +36,7 @@ se vuelve un arbol.
 
 ---
 
-# Pasos fundamentales para usar Git:
+## Pasos fundamentales para usar Git:
 
 Para poder usar git, tenemos que instalarlo, por defecto en linux ya viene 
 instalado. Una vez instalado tenemos que configurar el programa para poder usarlo
@@ -75,7 +79,7 @@ de los comandos:
 
 `git --help`
 
-# ¿Cómo comenzar a usar Git en tu proyecto?
+## ¿Cómo comenzar a usar Git en tu proyecto?
 
 Una vez configurado tu git, puedes ir crear un repositorio y luego iniciar el 
 comando:
@@ -86,3 +90,8 @@ Con ese comando se inicia git y así poder empezar con el control de versiones.
 
 ---
 
+# CLASE #3
+
+---
+
+## Comandos Básicos de Git: add, commit y luego
