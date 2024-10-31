@@ -22,17 +22,22 @@ cuando surgió git, fue implementado de inmediatamente.
 se aloja el proyecto. Cada desarrollador cuenta con una copia en su maquina local
 del repositorio original el cual puede trabajar.
 
-2. **Ramas**: Son lineas de desarrollo independiente del cual puedes trabajar y si
+2. **Staging**: Son los archivos que git les hace seguimiento pero que no los guarda
+en el área de control de versiones, se pueden comparar, editar, quitar y poner. Es
+como un limbo, donde git le hace seguimiento pero que no guarda en las versiones 
+definitivas.
+
+3. **Ramas**: Son lineas de desarrollo independiente del cual puedes trabajar y si
 deseas unirlas al proyecto original, en caso que no puede surgir un proyecto 
 totalmente nuevo. 
 
-3. **Arbol**: Cuando un proyecto es muy amplio, puede tener un arbol de versiones,
+4. **Arbol**: Cuando un proyecto es muy amplio, puede tener un arbol de versiones,
 donde cada rama es independiente de la otra, al final la mirada general de las ramas
 se vuelve un arbol. 
 
-4. **Commits**: Son los cambios guardados de una rama en el proyecto. 
+5. **Commits**: Son los cambios guardados de una rama en el proyecto. 
 
-5. **Merge**: Es combinar dos ramas o muchas más en una sola. 
+6. **Merge**: Es combinar dos ramas o muchas más en una sola. 
 
 ---
 
@@ -95,3 +100,81 @@ Con ese comando se inicia git y así poder empezar con el control de versiones.
 ---
 
 ## Comandos Básicos de Git: add, commit y luego
+
+Para comenzar, tenemos unos cuantos comandos básicos y un concepto fundamental para
+trabajar con git. 
+
+1. **Estado del Repositorio**: Para poder saber el estado actual del repositorio y
+el estado de los archivos, usa el siguiente comando:
+
+`git status`
+
+Con este comando puedes saber el "Estado Actual" de lo que hace git con cada archivo
+del repositorio. Vas a ver que una vez agregado los archivos en el area de Staging,
+si se encuentra modificado, si git le hace seguimiento o no, o si ya todo está en
+el control de versiones guardado, no verás nada. 
+
+También te muestra si algún archivo ha sido creado o eliminado. 
+
+2. **Area Staging**: Para poder subir un archivo al control de versiones y guardarlo
+primero tenemos que subir lo al área de "Staging". Se hace con el siguiente comando:
+
+`git add <file>`
+`git add .`
+
+Cuando usas el primer comando, cambia el nombre las `<>` por el nombre del archivo.
+Cuando usas el segudon comando agrega todos los archivos que tengas en el 
+repositorio, incluídos los que están en otras sub carpetas. 
+
+Bueno y ¿qué es el Area Staging? Esta área es super importante comprender la, pues
+es cuando git sube los archivos para hacerles seguimiento pero no los guarda en el 
+sistema de versiones. Aquí, puedes subir el archivo, si te encuentras seguro de 
+ponerlo como una versión le haces un commit, sino, lo retiras o lo modificas. 
+
+Es como estar en un limbo, están en el área de preparación. Los archivos que no se
+han agregado a Staging, git solo los indentifica pero no les hace un seguimiento. 
+
+3. **Eliminar Archivos del Staging Area**: Para eliminar un archivo del Staging area
+usa el siguiente comando: 
+
+`git rm --cached <name>`
+
+Cambia el nombre las `<>` por el nombre del archivo. Este comando, lo podemos usar
+cuando subimos un archivo con `git add` pero ya no queremos subirlo al sistema de 
+versiones. Simplemente lo retira del área de preparación. 
+
+**NOTA**: En todo este proceso puedes usar `git status` para ver el estado de los
+archivos y lo que está haciendo git.
+
+4. **Guardar en el Sistema de versiones**:
+
+Cuando ya quieras guardar el o los archivos en el sistema de versiones usar el 
+siguiente comando:
+
+`git commit -m "mesaje"`
+
+Cuando ya tengas los archivos listos en el "Staging area", puedes guardar los como
+una versión del repositorio, del proyecto, usa este comando, es importante, siempre
+cambiar "mensaje" por un texto descriptivo de lo que has hecho en el proyecto. 
+
+Recomiendo escribir detalladamente tus cambios y no hacer commits tan largos, sino
+pequeños. 
+
+5. **Historial de Versiones**:
+
+Para saber el historial de versiones de los commits, de tus versiones guardadas usa
+el comando: 
+
+`git log`
+
+Te va mostrar todas las veriones, con su respectivo indentificador, fecha, nombre y
+correo de la persona y el texto del commit con que fue hecho.
+
+**NOTA**:
+
+1. Recuerda siempre usar `git status` para saber que está pasando con los archivos
+en git.
+2. Cuando usas `git log` muestra el historial por defecto del último al primer 
+commit.
+
+---
