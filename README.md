@@ -187,22 +187,44 @@ commit.
 
 ## Ramas y Funsión de Cambios: Branch, Merge, Switch y Checkout
 
-las ramas son importantes porque podemos trabajar sin chocar con el trabajo de 
-otra persona y no dañar el proyecto. 
+Las ramas son muy útiles e importantes para el trabajo colaborativo en un 
+proyecto por las siguientes razones:
 
-En caso que no nos guste nuestro trabajo, o dañemos nuestra rama podemos regresar
-y continuar con nuestro proceso. 
+1. Puedes trabajar en tu propia rama sin la necesidad de chocar con el trabajo
+de otra persona. 
+2. En caso que no te guste tu trabajo puedes hacer un reset y eliminar tu rama
+para comenzar desde cero con otra. 
+3. Todo lo que hagas en tu rama, ninguna otra persona lo va a ver, en tu rama
+puedes hacer lo que sea.
+4. Todos los archivos nuevos que creas en una rama, solo se quedan en esa rama y
+no se van a ver reflejados en otras ramas.  
 
-Al final, podemos unir las ramas en la rama principal.
 
-Los archivos, modifiaciones que hagas en general, solo se guardan en la rama
-en la que estás y no en la orignal, nadie de la rama original puede ver lo
-que ocurre en la otra rama. 
+**NOTA**:
 
-comandos basicos para eso:
+1. Cuando haces merge, es decir combinas tu rama a la rama principal todo el 
+historial de commits se va a reflejar en la rama principal. 
+2. Cuando ya termines tu trabajo y hagas merge, elimina tu rama, pues esa rama
+ya no tiene sentido para existir. 
 
-git brach = identifica la rama actual en la que te encuentras
+### RAMAS EN PROYECTOS:
 
+En general, en cada proyecto existen las siguientes ramas:
+
+1. Main: Rama principal donde se aloja el proyecto. 
+2. Dev / Exp: La Rama, ramas de los desarrolladores donde trabajan aparte.
+Dev --> Development. 
+Exp --> Experimental. 
+3. HotFix / BugFix: Ramas donde se tienen que arreglar bugs de manera urgente o 
+un bug que con el tiempo se va a arreglar. 
+
+Es una visión en general de los proyectos de como usan las ramas para el desarrollo
+del mismo. 
+
+### COMANDOS:
+
+1. `git branch` : Comando para identificar la rama actual en la que te encuentras. 
+2. 
 git checkout -b = crea un nueva rama y te dirige a esa nueva rama 
 
 para cambiar de rama: puedes usar dos comandos que hacen lo mismo:
