@@ -64,7 +64,7 @@ comando:
 
 Cambia las `<>` por tu nombre, o nombre de usuario. 
 
-3. **Correo**: Cuando se realiza algún cambiar en algún proyecto es importante 
+3. **Correo**: Cuando se realiza algún cambio en algún proyecto es importante 
 saber quien es y su correo para poder contactar a la persona. Para esto configura el
 correo de manera global con el siguiente comando:
 
@@ -92,6 +92,10 @@ comando:
 `git init`
 
 Con ese comando se inicia git y así poder empezar con el control de versiones.
+
+Lo que hace Git, es crear una carpeta oculta llamada .git, para poder ver la 
+carpeta, puedes usar el comando en la terminal `ls -a` para poder ver todos
+los archivos ocultos del repositorio donde se aloja tu proyecto. 
 
 ---
 
@@ -178,3 +182,45 @@ en git.
 commit.
 
 ---
+
+# CLASE #4
+
+## Ramas y Funsión de Cambios: Branch, Merge, Switch y Checkout
+
+las ramas son importantes porque podemos trabajar sin chocar con el trabajo de 
+otra persona y no dañar el proyecto. 
+
+En caso que no nos guste nuestro trabajo, o dañemos nuestra rama podemos regresar
+y continuar con nuestro proceso. 
+
+Al final, podemos unir las ramas en la rama principal.
+
+Los archivos, modifiaciones que hagas en general, solo se guardan en la rama
+en la que estás y no en la orignal, nadie de la rama original puede ver lo
+que ocurre en la otra rama. 
+
+comandos basicos para eso:
+
+git brach = identifica la rama actual en la que te encuentras
+
+git checkout -b = crea un nueva rama y te dirige a esa nueva rama 
+
+para cambiar de rama: puedes usar dos comandos que hacen lo mismo:
+
+git checkout <rama_name>
+git switch <rama_name>
+
+con estos comandos te puedes mover entre ramas.
+
+para combinar ramas, usa el comando:
+
+git merge <rama_name>
+
+une la rama que estás llamando con la que te encuentras
+
+cuando unes una rama a tu rama principal, esa rama ya no tiene sentido de 
+existir porque ha cumplido su función, para poder eliminar esa rama y no 
+ocupe cosas en memoria puede eliminar la con el siguiente comando:
+
+git branch -D <rama_name>
+
