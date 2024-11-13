@@ -196,8 +196,8 @@ de otra persona.
 para comenzar desde cero con otra. 
 3. Todo lo que hagas en tu rama, ninguna otra persona lo va a ver, en tu rama
 puedes hacer lo que sea.
-4. Todos los archivos nuevos que creas en una rama, solo se quedan en esa rama y
-no se van a ver reflejados en otras ramas.  
+4. Todos los archivos nuevos que creas y las modificaiones que hagas en una rama,
+solo se quedan en esa rama y no se van a ver reflejados en otras ramas.  
 
 
 **NOTA**:
@@ -212,7 +212,7 @@ ya no tiene sentido para existir.
 En general, en cada proyecto existen las siguientes ramas:
 
 1. Main: Rama principal donde se aloja el proyecto. 
-2. Dev / Exp: La Rama, ramas de los desarrolladores donde trabajan aparte.
+2. Dev / Exp: La Rama o ramas de los desarrolladores donde trabajan aparte.
 Dev --> Development. 
 Exp --> Experimental. 
 3. HotFix / BugFix: Ramas donde se tienen que arreglar bugs de manera urgente o 
@@ -223,26 +223,28 @@ del mismo.
 
 ### COMANDOS:
 
-1. `git branch` : Comando para identificar la rama actual en la que te encuentras. 
-2. 
-git checkout -b = crea un nueva rama y te dirige a esa nueva rama 
+1. `git branch`: Comando para identificar la rama actual en la que te encuentras. 
+2. `git branch -b <nombre de la rama>`: Comando para crear una rama nueva.
+3. `git branch -D`: Comando para eliminar un rama. 
+4. `git switch <nombre de la rama>`: Comando para moverte a otra rama.
+5. `git merge <nombre de la rama>`: Comando para unir ramas, ten en cuenta que 
+al usar ese comando, une la rama que estás llamando con la rama actual en la que
+te encuentras. 
 
-para cambiar de rama: puedes usar dos comandos que hacen lo mismo:
+**NOTA**:
 
-git checkout <rama_name>
-git switch <rama_name>
+Hay un comando que es como navaja suiza que puede hacer muchas cosas, este comando
+es `git checkout` con ese comando puedes cambiar de ramas, crear una nueva rama,
+restaurar archivos y un sin fin de cosas más que no tengo el conocimiento por ahora.
 
-con estos comandos te puedes mover entre ramas.
+Se recomiendo no usar ese comando sino, usar los comandos que tienen una sola 
+función o se encargan de una sola cosa. Ya que esto facilita ver el historial para
+tus colegas de trabajo, evitar errores en el proyecto, evitar restaurar archivos
+que no necesitas... etc.
 
-para combinar ramas, usa el comando:
+---
 
-git merge <rama_name>
+# CLASE #5
 
-une la rama que estás llamando con la que te encuentras
-
-cuando unes una rama a tu rama principal, esa rama ya no tiene sentido de 
-existir porque ha cumplido su función, para poder eliminar esa rama y no 
-ocupe cosas en memoria puede eliminar la con el siguiente comando:
-
-git branch -D <rama_name>
+##
 
