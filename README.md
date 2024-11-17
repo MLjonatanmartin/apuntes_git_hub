@@ -345,3 +345,38 @@ el proyecto normal.
 
 # CLASE #6
 
+## Gestion de Versiones con tag y checkout
+
+con git tag, puedo poner una etiqueta a una version, digamos como para 
+la version 1.1 o la version alpha o cualquier nombre, osea, puedo ponerle 
+nombre a las cosas. 
+
+con git tag, puedes mirar las etiquetas o o nombre de versiones que le has
+puesto a un commit
+
+con git tag -a <nombre de la version> <id del commit> -m <mensaje>
+con ese comando puedes poner el nombre de la version o tag a un commit y el 
+mensaje para mirar detalles. 
+
+con git show <nombre de la etiqueta> puedes explorar la etiqueta mencionada
+con info de quien lo hizo, cuando fue creado, comentario y el commit de 
+referencia y los cambios hechos en el commit. 
+
+con esto, imaginate, despues de unos 200 commits, puedes poner separadores de
+versiones, como los separadores de libros. 
+
+con git tad -d <nombre de la etiqueta> elimina la etiqueta o version que has 
+hecho. Esto no altera nada con el historial de commit ni tampoco a los archivos
+del repositorio, solo elimina el nombre que le pusiste al commit. 
+
+
+
+
+con git checkout puedes evaluar cambios de una rama con otra rama 
+
+con git checkout puedo moverme entre commits, cuando lo haces, que te mueves 
+a otro commit te sale un mensaje diciendo que no estas en el head del proyecto
+y que lo que hagas y guardes no va a afectar a  los futuros commits o ramas
+
+pero que si quieres crear cambios, crea una nueva rama desde ahi con el comando
+que te dicen: git switch -c <new_brach_name> 
