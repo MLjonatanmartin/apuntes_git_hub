@@ -39,6 +39,10 @@ se vuelve un arbol.
 
 6. **Merge**: Es combinar dos ramas o muchas más en una sola. 
 
+7. **Head / Puntero**: Una etiqueta que apunta al último commit de un proyecto 
+o una rama. Puedes cambiar el puntoro con otros comandos, es como la etiqueta
+de la versión definitiva. 
+
 ---
 
 ## Pasos fundamentales para usar Git:
@@ -246,5 +250,98 @@ que no necesitas... etc.
 
 # CLASE #5
 
-##
+## Volviendo en el Tiempo en Git: Reset y Revert
+
+Suele pasar que necesitamos corregir ciertas cosas en el proyecto y para ello
+nos tenemos que mover a commits anteriores para poder corregir los errores. 
+Podemos usar dos comandos que vamos a ver a continuación pero antes necesitamos
+hacer lo siguiente:
+
+1. Usar `git log` para tomar el identificador del commit al que queremos regresar
+o desacer los cambios.
+2. Tomar la decisión correcta de cual el comando que vamos a usar y hablar lo con
+el equipo.
+
+Los comandos son:
+
+
+1. `git revert <identificador>`: Este comando lo que hace es crear un nuevo commit
+borrando todos los cambios hechos en el commit puesto en el identificador, que nos
+lleva al commit anterior del indentificador.
+
+**VENTAJAS**:
+
+- Mantiene el historial de manera lineal. 
+- Evitamos borrar cosas importantes por error.
+- Es un comando menos instrusivo. 
+
+**CONSIDERACIONES**
+
+- Este comando solo sirve para los commits nuevos, para el último commit, ya que
+si lo hago en un commit del pasado, lo que borre o haga no se va a ver reflejado 
+en el presente ni en futuros commits. 
+
+Esto pasa porque cada commit es independiente y modificar algo en el pasado, no se
+va a ver reflejado.
+
+**VISUALIZACION**:
+
+Imaginemos que tenemos los siguientes commits:
+
+A -> B -> C -> D -> E
+
+Si me he equivocado con cosas del commit "E" puedo revertir las cosas, quedando
+así:
+
+A -> B -> C -> D -> E -> revert-E 
+
+Luego de hacer los cambios que necesito puedo seguir con mi trabajo normal:
+
+A -> B -> C -> D -> E -> revert-E -> F -> G -> H
+
+
+2. `git reset <identificador>`: Este comando literalmente borra las cosas del 
+historial, borra los archivos y las cosas del Staging area. Lo que hace es hacer
+un reinicio de todo. Tiene diferentes modos:
+
+- `git reset --hard <identificador>`: Borra todo, te lleva la punto que has puesto
+en el commit del identificador.
+
+- `git reset --soft <identificador>`: Mueve el head o puntero al commit especificado
+pero mantiene las cosas en el repositorio y en el Staging area. Esto significa
+que puedes un commit con los mismos cambios si lo deseas. 
+
+- `git reset --mixed <identificador>`: Quita las cosas del Staging area, pero 
+mantiene las cosas en el repositorio.
+
+**VENTAJAS**
+
+- Te limpia el historial.
+- Si las cosas están super mal, te elimina todo.
+
+**CONSIDERACIONES**
+
+- Este comando es muy peligroso, porque literalmente borra todo, puede afectar
+el trabajo tuyo y el de tus compañeros, además de tirar te las cosas.
+- Este comando si lo vas a aplicar, habla lo con tu equipo primero.
+- Nunca uses este comando para quitar las cosas del Staging area, usa el otro
+comando. 
+
+**VISUALIZACION**
+
+Imaginemos que tenemos los siguientes commits:
+
+A -> B -> C -> D -> E -> F -> G -> H -> I -> J
+
+Me he equivocado y necesito volver al commit E porque todo ha salido mal.
+Al aplicar el comando se va a ver así:
+
+A -> B -> C -> D -> E
+
+literalmente como ves, se borra todo, desde este punto, puedo continuar con
+el proyecto normal.
+
+---
+
+# CLASE #6
 
