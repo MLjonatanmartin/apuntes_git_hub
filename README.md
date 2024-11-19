@@ -231,7 +231,9 @@ del mismo.
 2. `git branch -b <nombre de la rama>`: Comando para crear una rama nueva.
 3. `git branch -D`: Comando para eliminar un rama. 
 4. `git switch <nombre de la rama>`: Comando para moverte a otra rama.
-5. `git merge <nombre de la rama>`: Comando para unir ramas, ten en cuenta que 
+5. `git switch -c <nombre de la rama>`: Comando para crear una nueva rama y moverte
+a ella.
+6. `git merge <nombre de la rama>`: Comando para unir ramas, ten en cuenta que 
 al usar ese comando, une la rama que estás llamando con la rama actual en la que
 te encuentras. 
 
@@ -347,30 +349,45 @@ el proyecto normal.
 
 ## Gestion de Versiones con tag y checkout
 
-con git tag, puedo poner una etiqueta a una version, digamos como para 
-la version 1.1 o la version alpha o cualquier nombre, osea, puedo ponerle 
-nombre a las cosas. 
+### Git tag
 
-con git tag, puedes mirar las etiquetas o o nombre de versiones que le has
-puesto a un commit
+¿Es bueno tener una lista entera de commits? ¿Cómo se manejan las versiones?
+Realmente no es bueno tener una lista interminable de commits, lo que tienes
+que hacer es crear versiones de tu proyecto. Es muy facil de hacerlo y Aquí
+te explico como.
 
-con git tag -a <nombre de la version> <id del commit> -m <mensaje>
-con ese comando puedes poner el nombre de la version o tag a un commit y el 
-mensaje para mirar detalles. 
+**COMANDOS**
 
-con git show <nombre de la etiqueta> puedes explorar la etiqueta mencionada
-con info de quien lo hizo, cuando fue creado, comentario y el commit de 
-referencia y los cambios hechos en el commit. 
+1. `git tag`: Con este comando puedes tomar el id o el hash de un commit y 
+ponerle un tag, una etiqueta, le puedes cualquier nombre y así se llamará
+ese commit. Por ejemplo:
 
-con esto, imaginate, despues de unos 200 commits, puedes poner separadores de
-versiones, como los separadores de libros. 
+`git tag -a <nombre de la version> <id del commit> -m <mensaje>`
 
-con git tad -d <nombre de la etiqueta> elimina la etiqueta o version que has 
-hecho. Esto no altera nada con el historial de commit ni tampoco a los archivos
-del repositorio, solo elimina el nombre que le pusiste al commit. 
+Es bueno que al final, le coloques un mensaje al tag para que al futuro recuerde
+que has hecho. 
 
+2. `git tag`: Con este comando puedes mirar todos los tag o etiquetas que has 
+puesto en tu proyecto. 
 
+3. `git show <nombre de la etiqueta>`: Puede acceder directamente al commit con 
+el nombre de la verión que le has puesto. Puedes mirar toda la info como: archivos,
+fecha y hora, autor, mensaje, id del commit, etc.
 
+4. `git tad -d <nombre de la etiqueta>`: Con este comando puedes eliminar la 
+etiqueta, quizas te has equivocado y lo necesitas cambiar. 
+
+**NOTA**:
+
+1. Es muy bueno usar `git tag` ya que es un separador de commits, como un separador
+de libros, muy útil en tu equipo.
+2. Si eliminas una etiqueta, no pasa nada, solo se elimina el tag, el commit sigue 
+intacto.
+3. Todos los commits deberían tener un tag, pero como es mucho trabajo es bueno
+ponerse de acuerdo con el equipo de trabajo y plantear cuando nombran una versión
+del proyecto.
+
+### Git Checkout
 
 con git checkout puedes evaluar cambios de una rama con otra rama 
 
