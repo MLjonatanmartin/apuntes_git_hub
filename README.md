@@ -442,4 +442,10 @@ conflictos.
 
 ---
 # CLASE #8
-##
+##  Usando Git desde Visual Studio Code
+
+Todo lo que hemos aprendido se puede usar en Visual Studio Code porque viene 
+integrado, tambien en otros de texto para código traen estás mismas opciones. 
+
+
+Experimenta, prueba y mejora!. 
