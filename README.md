@@ -389,11 +389,11 @@ del proyecto.
 
 ### Git Checkout
 
-con git checkout puedes evaluar cambios de una rama con otra rama 
+Otro de los usos que tiene el `git checkout` es que puedes cambiar de commits ya
+regresar commits atrás. Esto te da una gran ventaja para probrar cosas en el 
+repositorio. 
 
-con git checkout puedo moverme entre commits, cuando lo haces, que te mueves 
-a otro commit te sale un mensaje diciendo que no estas en el head del proyecto
-y que lo que hagas y guardes no va a afectar a  los futuros commits o ramas
-
-pero que si quieres crear cambios, crea una nueva rama desde ahi con el comando
-que te dicen: git switch -c <new_brach_name> 
+Ten encuenta que al cambiar, git te da un aviso que no estás en el head y que los
+cambios que realices no serán guardados, en cambio, si los necesitas guardar, te
+recomienda crear una nueva rama y ahí guardar todos los cambios para que a futuro
+si lo necesitas hagas merge. 
