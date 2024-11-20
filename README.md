@@ -377,6 +377,12 @@ fecha y hora, autor, mensaje, id del commit, etc.
 4. `git tad -d <nombre de la etiqueta>`: Con este comando puedes eliminar la 
 etiqueta, quizas te has equivocado y lo necesitas cambiar. 
 
+5. `git push origin <tag_name>`: Con este comando envías tu etiqueta a un 
+repositorio remoto. Cambia tag_name por el nombre de la etiqueta.
+
+6. `git push origin --tags`: Con este comando envías todas las etiquetas que 
+tengas en al repositorio remoto. 
+
 **NOTA**:
 
 1. Es muy bueno usar `git tag` ya que es un separador de commits, como un separador
@@ -406,4 +412,11 @@ Para regresar al commit original de tu proyecto usa `git checkout main`
 te da un error y te dice que primero realices el commit antes de irte a otro.
 2. Recuerda que todo lo que hagas no queda guardado a no ser que le hagas a no ser
 que lo guardes en otra rama. 
+
+---
+
+# CLASE #7
+## COMO RESOLVER CONFLICTOS DE RAMAS EN GIT
+
+
 
