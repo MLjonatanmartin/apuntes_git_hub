@@ -397,3 +397,13 @@ Ten encuenta que al cambiar, git te da un aviso que no estás en el head y que l
 cambios que realices no serán guardados, en cambio, si los necesitas guardar, te
 recomienda crear una nueva rama y ahí guardar todos los cambios para que a futuro
 si lo necesitas hagas merge. 
+
+Para regresar al commit original de tu proyecto usa `git checkout main`
+
+**NOTA**
+
+1. Si no has hecho un commit antes de moverte a otro commit en el pasado, git
+te da un error y te dice que primero realices el commit antes de irte a otro.
+2. Recuerda que todo lo que hagas no queda guardado a no ser que le hagas a no ser
+que lo guardes en otra rama. 
+
