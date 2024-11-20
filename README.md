@@ -418,5 +418,28 @@ que lo guardes en otra rama.
 # CLASE #7
 ## COMO RESOLVER CONFLICTOS DE RAMAS EN GIT
 
+Cuando estamos trabajando en una empresa, proyecto o con otras personas, es normal
+ver que hay varias personas trabajando en un mismo archivo. Entonces cuando llega
+el momento de combinar todo el trabajo, lo que va a pasar son conflictos, choques
+con las ramas.
 
+¿Cómo se resuelven esos conflictos? Es muy sencillo:
 
+1. Cuando usas el comando `git merge`, te sale un mensaje de advertencia que 
+hay conflictos. 
+2. Se te abre tu editor de código y te da las opciones de conservar el cambio
+actual y rechazar el cambio que viene, conservar el cambio que viene y rechazar
+el cambio actual, conservar ambos cambios o comparar los cambios.
+
+Puedes elegir cualquier opción y si luego deseas, puedes agregar o quitar cosas.
+
+3. En caso que no te salga en tu editor, abre nano o vim en la terminal para 
+resolver los conflictos, no te preocupes que git te va a resaltar donde están esos
+conflictos.
+4. Haces un commit ya con los cambio hechos.
+5. Haces un merge para que todo se integre correctamente.
+6. Eliminas la rama que ya no tiene razón para existir.
+
+---
+# CLASE #8
+##
