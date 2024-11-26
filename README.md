@@ -449,3 +449,21 @@ integrado, tambien en otros de texto para código traen estás mismas opciones.
 
 
 Experimenta, prueba y mejora!. 
+
+---
+# CLASE #9 
+## Git Hub es clave para los desarrolladores
+
+En Resumidas cuentas, en estas clases vimos en general que es Git Hub, y como crear
+el perfil en la plataforma. 
+
+También en como crear la llave SSH para la conexión de manera totalemente segura 
+en el servidor de Git Hub con los datos encriptados. 
+
+Esos apuntes, no los tomé, pues ya no los tengo hecho desde hace tiempo. 
+
+Nota: Git Hub no tiene nada que ver con Git, solo han tomado el nombre. 
+---
+
+# CLASE #10
+## Clone, fork, y estrellas a respositorios 
