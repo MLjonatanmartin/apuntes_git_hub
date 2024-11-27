@@ -487,3 +487,17 @@ y que aperecen en el feed.
 # CLASE #11
 ##  Trabajo con repositorios remotos: push, pull, fecth
 
+Comandos esenciales para trabajar con Git Hub:
+
+1. `git pull`: se trae la info del repositoria remoto al local y la actualiza. 
+2. `git push`: envía la info del repositorio local al repositorio remoto. 
+3. `git fetch`: se trae la info del repositorio remoto, pero no actualiza tu 
+repositorio local. 
+
+**NOTA**:
+
+1. Al comando `git push` y `git pull` puedes agregar el parametro `-u` para conectar
+las ramas, eso quiere decir que solo con escribir `git push` o `git pull` envía,
+o se trae la info sin necesidad de especificar la rama. Puede ser útil, pero si 
+uno no es conciente, puede hacer un revuelto con las ramas, así que no recomiendo
+usar el parametro `-u`.
