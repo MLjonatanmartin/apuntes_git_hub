@@ -467,3 +467,23 @@ Nota: Git Hub no tiene nada que ver con Git, solo han tomado el nombre.
 
 # CLASE #10
 ## Clone, fork, y estrellas a respositorios 
+
+En la plataforma de Git Hub, hay muchas cosas que puedes hacer, entre ellas:
+
+1. **Fork**: Es sacar una copia del código de alguien más a tu cuenta de Git Hub,
+una vez que sacas la copia, se queda congelado el código, es decir, que no 
+se actualiza del repositorio original. 
+
+Es muy importante que siempre le hagas un fork a los proyectos que quieras copiar
+y trabajar, ya que con ello, tienes la copia y puedes trabajar bajo tus propias
+condiciones sin la necesidad de dañar o interferir con el proyecto original, además
+que las personas del repositorio original, no te puede molestar a ti.
+
+2. **Estrellas**: Marca como favoritos los proyectos que más te parecen interesantes
+y que aperecen en el feed. 
+
+---
+
+# CLASE #11
+##  Trabajo con repositorios remotos: push, pull, fecth
+
