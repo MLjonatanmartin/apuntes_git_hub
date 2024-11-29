@@ -501,3 +501,7 @@ las ramas, eso quiere decir que solo con escribir `git push` o `git pull` envía
 o se trae la info sin necesidad de especificar la rama. Puede ser útil, pero si 
 uno no es conciente, puede hacer un revuelto con las ramas, así que no recomiendo
 usar el parametro `-u`.
+
+---
+
+Probando cosas
