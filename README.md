@@ -508,14 +508,18 @@ hacer merge en caso que sea necesario.
 
 **NOTA**:
 
-1. Al comando `git push` y `git pull` puedes agregar el parametro `-u` para conectar
+1. Cuando haces `git log <rama>..origin/<rama>` para ver el historial en el 
+repositorio remoto, no te muestra el hostorial hasta que primero hayas hecho un 
+`git fetch`.
+
+2. Al comando `git push` y `git pull` puedes agregar el parametro `-u` para conectar
 las ramas, eso quiere decir que solo con escribir `git push` o `git pull` envía,
 o se trae la info sin necesidad de especificar la rama. Puede ser útil, pero si 
 uno no es conciente, puede hacer un revuelto con las ramas, así que no recomiendo
 usar el parametro `-u`.
 
 ---
+# CLASE #12
 
-Probando cosas
+## Gestión de Issues y Discussions en GitHub
 
-Probando de nuevo con la terminal el comando Fetch
