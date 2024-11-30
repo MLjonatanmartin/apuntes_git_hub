@@ -494,6 +494,18 @@ Comandos esenciales para trabajar con Git Hub:
 3. `git fetch`: se trae la info del repositorio remoto, pero no actualiza tu 
 repositorio local. 
 
+Para poder hacer el fetch de manera exitosa en la terminal de comandos sigue los
+siguientes pasos:
+
+1. Realiza el comando `git fetch <rama_name>` de la rama que te quieres traer.
+2. usa `git log <rama>..origin/<rama>` de la rama que harás el fetch. 
+3. Después de ver el historial y ver el commit realizado de manera remota.
+4. Por último terminar con un `git merge <rama> origin/<rama>`de la rama
+que quieres traerte los cambios.
+
+Con estos pasos podrás traerte todos los cambios desde el servidor remoto y podrás
+hacer merge en caso que sea necesario. 
+
 **NOTA**:
 
 1. Al comando `git push` y `git pull` puedes agregar el parametro `-u` para conectar
