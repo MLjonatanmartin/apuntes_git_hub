@@ -523,3 +523,17 @@ usar el parametro `-u`.
 
 ## Gestión de Issues y Discussions en GitHub
 
+Issues un ticket de seguimiento que permite rastrear tareas, errores y solicitudes
+dentro de un proyecto. Puedes especificar de que se trata el tiquete, en cosas como:
+
+1. **Assignees**: Etiquetar a usuarios del proyecto como responsables del Issues.
+2. **Label**: categoría del Issues, tales como: Bub, documentation, duplicate, etc.
+3. **Projects**: no deta.
+4. **Milestone**: El nivel de importancia del Issues a resolver. 
+
+También, puedes crear una carpeta oculta en tu repositorio llamada `.gituhub` el 
+cual permite que puedas crear a los Issues y así facilitar a las personas que 
+generan un Issues como al gestor del proyecto. 
+
+Entre otras cosas puedes colocar imgahes, etiquetar y hacer muchas cosas más.
+
