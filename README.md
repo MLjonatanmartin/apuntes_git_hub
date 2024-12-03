@@ -531,9 +531,14 @@ dentro de un proyecto. Puedes especificar de que se trata el tiquete, en cosas c
 3. **Projects**: no deta.
 4. **Milestone**: El nivel de importancia del Issues a resolver. 
 
-También, puedes crear una carpeta oculta en tu repositorio llamada `.gituhub` el 
-cual permite que puedas crear a los Issues y así facilitar a las personas que 
-generan un Issues como al gestor del proyecto. 
+También, puedes crear una carpeta oculta en tu repositorio llamada `.github` el 
+cual permite que puedas crear plantillas para los Issues y así facilitar a las
+personas hacer un Issues y a ti como gestor del proyecto mirarlos. 
 
-Entre otras cosas puedes colocar imgahes, etiquetar y hacer muchas cosas más.
+Entre otras cosas puedes colocar imganes, etiquetar y hacer muchas cosas más.
+
+---
+
+# CLASE #13
+## Colaboración sin errores: Pull Request en Git Hub
 
